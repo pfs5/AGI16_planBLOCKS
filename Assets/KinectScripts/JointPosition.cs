@@ -40,8 +40,8 @@ public class JointPosition : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-		//tick++;
-		//time += Time.deltaTime;
+		tick++;
+		time += Time.deltaTime;
 
         if (_bodySourceManager == null)
         {
@@ -90,7 +90,7 @@ public class JointPosition : MonoBehaviour
 					this.gameObject.transform.localPosition= new Vector3 (x, y, z);
 				}
 
-				//calculateSpeed ();
+				calculateSpeed ();
 
 
 				break;
@@ -103,7 +103,7 @@ public class JointPosition : MonoBehaviour
 			Vector3 distance = transform.position - lastPos;
 			Vector3 newSpeed = (distance / time)*5;
 
-			print (newSpeed.magnitude);
+			//print (newSpeed.magnitude);
 
 			if (newSpeed.magnitude < maxSpeed) {
 				speed [index] = newSpeed;

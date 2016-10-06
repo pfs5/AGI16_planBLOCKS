@@ -10,7 +10,27 @@ public class BodySourceManager : MonoBehaviour
     
     public Body[] GetData()
     {
-        return _Data;
+
+		return _Data;
+//		// ADDED CODE
+//		if (_Data == null || _Data.Length < 2) {
+//			return _Data;
+//		}
+//
+//		// Find body on center
+//		float minX = Mathf.Abs(_Data[0].Joints[JointType.SpineMid].Position.X);
+//		Body[] newData = new Body[1];
+//		newData [0] = _Data [0];
+//
+//		for (int i = 1; i < _Data.Length; i++) {
+//			float x = Mathf.Abs (_Data [i].Joints [JointType.SpineMid].Position.X);
+//			if (x < minX) {
+//				newData [0] = _Data [i];
+//				minX = x;
+//			}
+//		}
+//
+//		return newData;
     }
     
 

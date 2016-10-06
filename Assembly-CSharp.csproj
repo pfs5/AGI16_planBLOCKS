@@ -57,13 +57,14 @@
      <Compile Include="Assets\KinectScripts\JointPosition.cs" />
      <Compile Include="Assets\KinectScripts\MultiSourceManager.cs" />
      <Compile Include="Assets\Scripts\AxeController.cs" />
+     <Compile Include="Assets\Scripts\BlockController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GamePointsController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RockController.cs" />
      <Compile Include="Assets\Scripts\ShieldController.cs" />
      <Compile Include="Assets\_MyScripts\BallController.cs" />
-     <Compile Include="Assets\_MyScripts\BlockController.cs" />
      <Compile Include="Assets\_MyScripts\BoardController.cs" />
      <Compile Include="Assets\_MyScripts\LineDraw.cs" />
      <Compile Include="Assets\_MyScripts\SensorTagController.cs" />

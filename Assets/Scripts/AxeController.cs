@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class AxeController : MonoBehaviour {
+	// Audio clip
+	public AudioClip axeHitClip;
 
 	// Throwing hand object
 	public GameObject holdingHand;
@@ -13,6 +15,9 @@ public class AxeController : MonoBehaviour {
 	public float tresh = 10f;
 	public float angleTresh = 60f;
 
+	public float xRotation;
+	public float yRotation;
+	public float zRotation;
 
 	// References
 	private JointPosition _handScript;
@@ -43,7 +48,13 @@ public class AxeController : MonoBehaviour {
 		// Disable collider
 		_collider.enabled = false;
 	}
-	
+
+	void FixedUpdate() {
+		if (thrown) {
+			transform.Rotate (xRotation, yRotation, zRotation);
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		// Move axe with hand
@@ -62,6 +73,9 @@ public class AxeController : MonoBehaviour {
 
 			// Throw
 			thrown = true;
+
+			// Destroy after some time
+			Destroy(gameObject,10);
 		}
 	}
 
@@ -127,5 +141,11 @@ public class AxeController : MonoBehaviour {
 			}
 		}
 		return maxMagnitudeIndex;
+	}
+
+	void OnCollisionEnter(Collision collision) {
+		if (collision.gameObject.layer == LayerMask.NameToLayer ("Block")) {
+			AudioSource.PlayClipAtPoint (axeHitClip, transform.position, 1f);
+		}
 	}
 }
