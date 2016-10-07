@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div id="splash" class="fullscreen">
+      <div class="row">
+        <div class="wrap">
+          <div class="branding medium-4 columns">
+            <h1>PlanBLOCKS</h1>
+            <p>The village is under attack. It is your viking duty to save it</p>
+            <a href="#" class="button">Read More</a>
+          </div>
+          <div class="video medium-8 columns">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iV-224nMwN8" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="info" class="fullscreen">
+      <div class="row">
+        <div class="medium-6 columns">
+          <img src="info-1.jpg" />
+        </div>
+        <div class="medium-6 columns">
+          <div class="top">
+            <h3>Motivation</h3>
+            <h2>Virtual Reality immersion and throw detection</h2>
+            <p>We combine immediate real time events with rich historical data to help answer the toughest questions about retention, growth, and engagement.</p>
+          </div>
+          <div class="row">
+            <div class="large-6 columns">
+              <h3>Goal</h3>
+              <p>We poll for data on a millisecond basis. You can react to new information in seconds rather than days.</p>
+            </div>
+            <div class="large-6 columns">
+              <h3>Learning objectives</h3>
+              <p>We process our data across a massively distributed network of reliable servers to ensure 99.99% uptime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="development" class="fullscreen">
+      <div class="row">
+        <div class="large-5 columns">
+          <h3>Challenges</h3>
+          <h2>Throw detection is not a trivial task.</h2>
+          <p>Other challenges we have faced:</p>
+          <ul>
+            <li>Motion sensing in environments with interference from other people</li>
+            <li>Depth perception</li>
+            <li>Developing a game that is fun to play but doable in a tight timeframe</li>
+            <li>Immersion</li>
+          </ul>
+          <p class="ff">Photo from <a href="#">ForskarFredag</a> where the first public demo was presented<br />
+          Credit: John Smith</p>
+        </div>
+      </div>
+    </div>
+    <div id="method" class="fullscreen">
+      <div class="row heading">
+        <div class="small-6 large-centered columns text-center">
+          <h3>Method</h3>
+          <h2>We combine several techniques to achieve an immersive experience</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="imgframe"><img src="kinect.jpg" /></div>
+          <p><b>Body tracking.</b> Microsoft Kinect is used for motion sensing input</p>
+        </div>
+        <div class="large-4 columns">
+          <div class="imgframe"><img src="oculus.jpg" /></div>
+          <p><b>VR Head Mounted Display.</b> The game is displayed with Oculus Rift</p>
+        </div>
+        <div class="large-4 columns">
+          <div class="imgframe"><img src="unity.png" /></div>
+          <p><b>Game Engine.</b> Unity 3D and C# provide game logic and functionality</p>
+        </div>
+      </div>
+    </div>
+    <div id="conclusions" class="fullscreen">
+      <div class="row">
+        <div class="large-6 columns front-slider">
+          <div class="orbit" role="region" aria-label="Featured Project Photos" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="front-slider/slider1.jpg" alt="Space">
+                <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="front-slider/slider2.jpg" alt="Space">
+                <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="front-slider/slider3.jpg" alt="Space">
+                <figcaption class="orbit-caption">Encapsulating</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="front-slider/slider4.jpg" alt="Space">
+                <figcaption class="orbit-caption">Outta This World</figcaption>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
+          </div>
+        </div>
+        <div class="large-6 columns">
+          <h3>Conclusions</h3>
+          <h2>Playability is important</h2>
+          <p> As the aim of the project was to make it as realistic as possible we focused a
+              lot of time to make realistic 3D models for the tools, ingredients and the
+              kitchen environment. We looked into bumpmapping and started to research how we
+              would implement realistically looking fluids such as water, fire and oil.</p>
+          <p>For the interaction part we learned how to make use of both the Xbox
+            360 Kinect for skeleton tracking and the Oculus Rift for the virtual
+            experience. We would have loved to use the Xbox One Kinect but the
+            SDK for that Kinect requires Windows 8 or higher to work and since
+            the Oculus Rift we used was attached to a computer which could not
+            be updated to Windows 8 for various reasons we had to use the old
+            Xbox 360 Kinect. </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="team-wrap">
+        <div class="row">
+          <div class="large-12 columns">
+            <h3>Team</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-3 columns">
+            <p>Patrik Fraj-Sladoljev<br />pfrajsladoljev@gmail.com</p>
+          </div>
+          <div class="large-3 columns">
+            <p>Mihael Marović<br />www.mihael@gmail.com</p>
+          </div>
+          <div class="large-3 columns">
+            <p>Domagoj Penić<br />dpenic23@gmail.com</p>
+          </div>
+          <div class="large-3 columns">
+            <p>Nico Palmroos<br />palmroos@kth.se</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-2 columns">
+          <img src="kth.jpg" />
+        </div>
+        <div class="large-10 columns">
+          <div class="row">
+            <div class="large-6 columns">
+              <h3>The Course</h3>
+              <p>The project is part of the Advanced Graphics and Interaction Course
+                at KTH.</p>
+              <p>The course contact person is Mario Romero</p>
+            </div>
+            <div class="large-6 columns">
+              <h3>Links</h3>
+              <p><a href="">Course Website</a><br />
+                <a href="">KTH Visualization Studio</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
